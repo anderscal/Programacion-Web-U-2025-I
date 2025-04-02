@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "header header header"
+        "news text aside"
+        "footer footer aside";
+    background-color: yellow;
+}
+
+header {
+    grid-area: header;
+    background-color: brown;
+}
+
+#news {
+    grid-area: news;
+    background-color: darkgoldenrod;
+}
+
+#text {
+    grid-area: text;
+    background-color: darkolivegreen;
+}
+
+aside {
+    grid-area: aside;
+    background-color: blueviolet;
+}
+
+footer {
+    grid-area: footer;
+    background-color: blue;
+}
+
+@media (min-width: 480px) {
+    #container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "header header"
+            "news text"
+            "aside aside"
+            "footer footer"
+        ;
+    }
+    
+}

@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 200vh;
+}
+
+.caja{
+    border: solid;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: green;
+}
+#caja2{
+    background-color: red;
+    position: sticky;
+    top: 0;
+    left: 30px;
+    /* sticky baja si el alto de la pantalla
+    es alto y se baja con el scroll */
+}
+/* #test{
+    border: solid;
+    background-color:blue; 
+    height: 50px;
+} */

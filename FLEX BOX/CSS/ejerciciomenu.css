@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container1 {
+    background-color: gray;
+    display: flex;
+    flex-wrap:wrap;
+ flex-direction: column;
+}
+
+
+
+.box {
+    border: solid;
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    font-size: 20;
+}

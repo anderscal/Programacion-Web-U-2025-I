@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#movil {
+    width: 100vh;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+        "encabezado"
+        "navegacion"
+        "productos"
+        "servicios"
+        "snlaces"
+        "piedepagina";
+    ;
+
+    
+}
+
+header {
+    background-color: chocolate;
+}
+
+nav {
+    background-color: darkcyan;
+}
+
+#products {
+    background-color: coral;
+}
+
+#services {
+    background-color: brown;
+}
+
+aside {
+    background-color: darkblue;
+}
+
+footer {
+    background-color: chartreuse;
+}
+
+
+@media(min-width:480px) {
+    #movil {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+            "encabezado encabezado navegacion"
+            "productos productos productos"
+            "servicios servicios servicios"
+            "enlaces piedepagina piedepagina";
+        ;
+    }
+
+    header {
+        grid-area: encabezado;
+        background-color: chocolate;
+    }
+
+    nav {
+        grid-area: navegacion;
+        background-color: darkcyan;
+    }
+
+    #products {
+        grid-area: productos;
+        background-color: coral;
+    }
+
+    #services {
+        grid-area: servicios;
+        background-color: brown;
+    }
+
+    aside {
+        grid-area: enlaces;
+        background-color: darkblue;
+    }
+
+    footer {
+        grid-area: piedepagina;
+        background-color: chartreuse;
+    }
+}
+
+@media(min-width: 768px) {
+    #movil {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+            "navegacion encabezado encabezado"
+            "navegacion productos enlaces"
+            "navegacion servicios enlaces"
+            "navegacion piedepagina piedepagina"
+        ;
+    }
+
+    header {
+        grid-area: encabezado;
+        background-color: chocolate;
+    }
+
+    nav {
+        grid-area: navegacion;
+        background-color: darkcyan;
+    }
+
+    #products {
+        grid-area: productos;
+        background-color: coral;
+    }
+
+    #services {
+        grid-area: servicios;
+        background-color: brown;
+    }
+
+    aside {
+        grid-area: enlaces;
+        background-color: darkblue;
+    }
+
+    footer {
+        grid-area: piedepagina;
+        background-color: chartreuse;
+    }
+}
