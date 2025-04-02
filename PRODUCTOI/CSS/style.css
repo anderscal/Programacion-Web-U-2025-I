@@ -1,0 +1,260 @@
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  padding-top: 76px;
+}
+
+
+.container-header {
+  /* background-color: #3366CC; */
+  background-color: #19763A;
+}
+
+/* -------------------------------------IMAGEN GOBIERNO */
+#img-en {
+  max-width: 170px;
+}
+
+/* -------------------------------------IDIOMAS */
+/* .dropdown-menu {
+  font-size: 12px;
+} */
+
+
+/* Mantener el fondo blanco en todos los estados */
+.col-3 .dropdown-toggle {
+  font-size: 1em;
+  height: 30px;
+  max-width: 90px;
+  background-color: white !important;
+  color: black !important;
+}
+
+/* Cuando el botón está seleccionado (clic o tab) */
+.dropdown-toggle:focus,
+.dropdown-toggle:active,
+.show>.dropdown-toggle {
+  background-color: white !important;
+  color: black !important;
+  border: 1px solid #2a8c4a !important;
+  box-shadow: none !important;
+  /* Elimina borde azul o negro de Bootstrap */
+  /* border-radius: 6px;  
+  margin: 5px; */
+  padding-left: 5px;
+
+}
+
+.dropdown {
+  border-radius: none;
+}
+
+.dropdown-menu {
+  padding: 2px;
+  width: 70px;
+  background-color: #eee !important;
+  border-radius: 5px;
+
+}
+
+.dropdown-item {
+  font-size: 1em;
+}
+
+.dropdown-item:hover {
+  background-color: #19763A !important;
+  /* Color de fondo al pasar el mouse */
+  color: white !important;
+  /* Color del texto al pasar el mouse */
+
+}
+
+
+/* -------------------------------------BARRA DE BUSQUEDA */
+.col-6 .form-control {
+  height: 30px;
+  max-width: 300px;
+  font-size: 1em;
+
+}
+
+.col-6 .btn {
+  height: 30px;
+  border-color: white;
+}
+
+.custom-icon {
+  color: white;
+  font-size: 1em;
+}
+
+.btn-outline-success:hover {
+  background-color: #E21D1C !important;
+  border-color: #E21D1C !important;
+
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #2a8c4a;
+}
+
+/* ------------------------------------- FOTOENCABEZADO */
+
+#img-logo {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ------------------------------------------- NAVBAR */
+.nav-link {
+  font-size: 1em;
+}
+
+/* Centrar el menú */
+.navbar-nav {
+  margin-top: 10px;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Estilizar los submenús */
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  /* Hace que el submenú salga hacia la derecha */
+  margin-top: 0;
+  display: none;
+  /* Ocultar submenús por defecto */
+  position: absolute;
+}
+
+/* Mostrar submenú cuando el padre está activo */
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+
+/* AJUSTE A MENUS Y SUBMEUS EN DESBORDE POR PALABRAS*/
+.dropdown-menu {
+  min-width: 200px;
+  max-width: 250px;
+  white-space: normal;
+}
+
+
+.dropdown-submenu .dropdown-menu {
+  min-width: 200px;
+  /* Ajusta el ancho mínimo para palabras largas */
+  max-width: 300px;
+  white-space: normal;
+}
+
+/* AJUSTE A SECCIONES DEL MENU */
+
+.menusprin {
+  /* background-color: #ebaf2b; */
+  border-radius: 6px;
+  margin: 5px;
+  padding-left: 5px;
+}
+
+/* -----------------------------------------------------SLIDER */
+
+
+.carousel-item {
+  width: 100%;
+}
+
+/* -----------------------------BOTONES IMPORTANTES */
+
+#botones-import {
+  font-size: 1.1em;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 8px;
+  /* color: #212C2C; */
+  color: white;
+  font-weight: 600;
+}
+
+#div-import {
+  padding: 10px;
+}
+
+.container-but {
+  /* background-color: #ebaf2b; */
+  background-color: #09610B;
+  border-radius: 10px;
+}
+
+/* ------------------------------------------------------TARJETAS */
+
+
+#cards-space {
+  margin: 10px;
+}
+
+.text-body-secondary {
+  font-weight: 600;
+  background-color: #ebaf2b;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* -------------------------------------------------------ACORDEON */
+
+.accordion-button:not(.collapsed) {
+  background-color: #09610B !important;
+  color: white !important;
+  box-shadow: none;
+}
+
+.accordion-button {
+  background-color: #f8f9fa;
+  /* Color de fondo cuando está colapsado */
+  color: #000;
+  /* Color del texto */
+}
+
+.accordion-button:focus {
+  box-shadow: none !important;
+  /* Evita el efecto de sombra al hacer clic */
+}
+
+/* ---------------------------------------------LISTAS */
+.col-sm-6 .h5 {
+  font-size: 1.1em;
+  padding-top: 15px;
+  color: #09610B;
+}
+
+.list-group {
+  font-size: 0.8em;
+  max-width: 300px;
+}
+
+/* ------------------------FOOTER */
+.copy {
+  line-height: 1em;
+  font-size: 0.9em;
+  max-width: 900px;
+  margin-bottom: 30px;
+}
+
+.img-foot{
+ 
+    max-width: 100%;
+    height: auto;
+    padding: 2px;
+}
+
+
+#minis{
+  max-width: 100px;
+}
+.txt-footer{
+  color:#E21D1C
+}
