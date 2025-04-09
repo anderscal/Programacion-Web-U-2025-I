@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <>
             <header>
-                <GitHubIcon id="icon-git"/>
+                <GitHubIcon className="icono-git"/>
                 <h1>User</h1>
                 <h2>GitHub</h2>
             </header>
