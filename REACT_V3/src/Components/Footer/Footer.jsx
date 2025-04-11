@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer>
         <p>Power By</p>
-        <p>Anderon Calderon</p>
+        <p>Anderson Calderon</p>
     </footer>
   )
 }
