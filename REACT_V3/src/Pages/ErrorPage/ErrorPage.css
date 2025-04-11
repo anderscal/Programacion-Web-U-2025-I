@@ -1,9 +1,11 @@
 
-main{
+/* main{
     display: flex;
     flex-direction: column;
     height: 100vh;
-}
+} */
+
+/* afecta mi main principan de las card */
 
 .p{
     font-size: 3rem;

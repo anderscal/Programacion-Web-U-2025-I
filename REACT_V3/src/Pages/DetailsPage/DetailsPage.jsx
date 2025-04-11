@@ -1,11 +1,28 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
+import CustomCard from '../../Components/CustomCard/CustomCard'
 
 const DetailsPage = () => {
+    const [character, setCharacter] = useState({})
+    let { id } = useParams()
+
+    useEffect(() => {
+        fetch(`https://rickandmortyapi.com/api/character/` + id)
+            .then(response => response.json())
+            .then(data => setCharacter(data))
+    }, []);
+
+
     return (
-        <div>
-            <h1>Rick and Morty</h1>
-            <p>Welcome to the Rick and Morty API</p>
-        </div>
+        <>
+            <main>
+
+                <CustomCard user={character} />
+
+            </main>
+
+        </>
+
     )
 }
 

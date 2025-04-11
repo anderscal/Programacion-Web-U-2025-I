@@ -1,6 +1,7 @@
 
-import React, {useEffect,useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import CustomCard from '../../Components/CustomCard/CustomCard'
+import { Link } from 'react-router-dom'
 
 const HomePage = () => {
 
@@ -15,7 +16,9 @@ const HomePage = () => {
     <main>
       {
         characters.map((user) => (
-          <CustomCard key={user.id} user={user} />
+          <Link to={`/details/${user.id}`} key={user.id}>
+            <CustomCard key={user.id} user={user} />
+          </Link>
         ))
       }
     </main>
