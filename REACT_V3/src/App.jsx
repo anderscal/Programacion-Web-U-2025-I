@@ -6,19 +6,21 @@ import Header from './Components/Header/Header'
 import NavBar from './Components/NavBar/NavBar'
 import HomePage from './Pages/HomePage/HomePage'
 import DetailsPage from './Pages/DetailsPage/DetailsPage'
+import ErrorPage from './Pages/ErrorPage/ErrorPage'
 
 const App = () => {
   return (
     <>
-      <Header/>
-      <NavBar/>
+      <Header />
       <BrowserRouter>
+        <NavBar />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/details/" element={<DetailsPage />} />
+          <Route path="/details" element={<DetailsPage />} />
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
       </BrowserRouter>
-  
+
       <Footer />
     </>
   )
