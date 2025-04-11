@@ -1,0 +1,12 @@
+header{
+    font-family: fantasy;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    background-color: chocolate;
+}
+
+.logo-db{
+    width: 350px;
+}
