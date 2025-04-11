@@ -12,13 +12,10 @@ const DetailsPage = () => {
             .then(data => setCharacter(data))
     }, []);
 
-
     return (
         <>
             <main>
-
                 <CustomCard user={character} />
-
             </main>
 
         </>

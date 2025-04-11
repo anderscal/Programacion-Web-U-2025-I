@@ -17,8 +17,8 @@ const App = () => {
         <Routes>
           <Route path="/" element={<HomePage/>} />
           <Route path='/details/:id' element={<DetailsPage/>} />
-          <Route path="/filter" element={<FilterPage/>} />
-          {/* <Route path="*" element={<ErrorPage/>} /> */}
+          <Route path="/filter/:especie" element={<FilterPage/>} />
+          <Route path="*" element={<ErrorPage/>} />
         </Routes>
       </BrowserRouter>
       <Footer />

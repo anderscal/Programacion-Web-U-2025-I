@@ -1,12 +1,8 @@
 
-/* main{
+.title{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-} */
-
-/* afecta mi main principan de las card */
-
-.p{
     font-size: 3rem;
 }
