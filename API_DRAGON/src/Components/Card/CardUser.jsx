@@ -5,6 +5,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import CardActionArea from '@mui/material/CardActionArea';
 import './CardUser.css'
+
  function CardUser(props) {
   return (
     <Card sx={{ maxWidth: 345 }}>
